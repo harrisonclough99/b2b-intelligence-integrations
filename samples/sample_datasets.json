@@ -1,0 +1,142 @@
+{
+  "coherent_edelweiss/google-maps-b2b-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/google-maps-b2b-enricher",
+    "sample_input": {
+      "queries": [
+        "specialty coffee roasters in Austin TX"
+      ],
+      "maxResultsPerQuery": 3,
+      "enrichWebsites": true,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/verified-email-contact-finder": {
+    "store_url": "https://apify.com/coherent_edelweiss/verified-email-contact-finder",
+    "sample_input": {
+      "domains": [
+        "apify.com",
+        "stripe.com"
+      ],
+      "executiveNames": [],
+      "maxSubpages": 1,
+      "includeAiSummary": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/apollo-b2b-lead-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/apollo-b2b-lead-enricher",
+    "sample_input": {
+      "companyDomains": [
+        "apify.com",
+        "stripe.com"
+      ],
+      "targetTitles": [
+        "CEO",
+        "CTO"
+      ],
+      "maxLeadsPerCompany": 2,
+      "includeAiHook": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/zoominfo-lusha-waterfall-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/zoominfo-lusha-waterfall-enricher",
+    "sample_input": {
+      "companyDomains": [
+        "apify.com",
+        "stripe.com"
+      ],
+      "includeAccountIntelligence": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/shopee-lazada-sea-ecommerce-api": {
+    "store_url": "https://apify.com/coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
+    "sample_input": {
+      "keywords": [
+        "wireless earbuds"
+      ],
+      "region": "SG",
+      "maxItemsPerKeyword": 3,
+      "includeMerchandisingInsight": true
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/mcp-server-ecosystem-index": {
+    "store_url": "https://apify.com/coherent_edelweiss/mcp-server-ecosystem-index",
+    "sample_input": {
+      "searchQueries": [
+        "mcp-server"
+      ],
+      "maxPackagesPerQuery": 3,
+      "includeAiSummary": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/uk-planning-construction-leads": {
+    "store_url": "https://apify.com/coherent_edelweiss/uk-planning-construction-leads",
+    "sample_input": {
+      "boroughsOrCities": [
+        "Westminster"
+      ],
+      "developmentType": "commercial",
+      "maxApplicationsPerArea": 2,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/sec-iapd-ria-wealth-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/sec-iapd-ria-wealth-enricher",
+    "sample_input": {
+      "firmDomainsOrQueries": [
+        "fisherinvestments.com",
+        "merceradvisors.com"
+      ],
+      "minAumMillionsUsd": 250,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/uk-cqc-care-homes-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/uk-cqc-care-homes-enricher",
+    "sample_input": {
+      "providerDomainsOrRegions": [
+        "careuk.com",
+        "bupa.co.uk"
+      ],
+      "includeAiSummary": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/us-npi-healthcare-enricher": {
+    "store_url": "https://apify.com/coherent_edelweiss/us-npi-healthcare-enricher",
+    "sample_input": {
+      "taxonomyDescription": "Clinic",
+      "city": "Austin",
+      "state": "TX",
+      "maxProviders": 3,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  },
+  "coherent_edelweiss/uk-fsa-food-hygiene-leads": {
+    "store_url": "https://apify.com/coherent_edelweiss/uk-fsa-food-hygiene-leads",
+    "sample_input": {
+      "searchKeywordOrCity": "London",
+      "maxEstablishments": 3,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+  }
+}

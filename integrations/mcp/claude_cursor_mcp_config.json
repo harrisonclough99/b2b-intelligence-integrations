@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "apify-b2b-intelligence-suite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server",
+        "--actors",
+        "coherent_edelweiss/google-maps-b2b-enricher,coherent_edelweiss/verified-email-contact-finder,coherent_edelweiss/apollo-b2b-lead-enricher,coherent_edelweiss/zoominfo-lusha-waterfall-enricher,coherent_edelweiss/shopee-lazada-sea-ecommerce-api,coherent_edelweiss/mcp-server-ecosystem-index,coherent_edelweiss/uk-planning-construction-leads,coherent_edelweiss/sec-iapd-ria-wealth-enricher,coherent_edelweiss/uk-cqc-care-homes-enricher,coherent_edelweiss/us-npi-healthcare-enricher,coherent_edelweiss/uk-fsa-food-hygiene-leads"
+      ],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}

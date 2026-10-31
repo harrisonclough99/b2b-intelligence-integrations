@@ -1,0 +1,107 @@
+{
+  "name": "Shopee & Lazada SEA Multi-Currency Price & 30d GMV Velocity Tracker",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger-1",
+      "name": "Daily Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/coherent_edelweiss~shopee-lazada-sea-ecommerce-api/run-sync-get-dataset-items",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "token",
+              "value": "={{$env.APIFY_TOKEN}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"keywords\": [\n    \"wireless earbuds\"\n  ],\n  \"region\": \"SG\",\n  \"maxItemsPerKeyword\": 3,\n  \"includeMerchandisingInsight\": true\n}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "apify-actor-http-2",
+      "name": "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        520,
+        300
+      ],
+      "notesInFlow": true,
+      "notes": "Extracts Southeast Asia e-commerce SKU prices normalized to USD with 30-day sales velocity."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{Boolean($json.verified_emails || $json.enriched_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "filter-verified-3",
+      "name": "Filter Verified B2B Records",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        800,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Daily Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api": {
+      "main": [
+        [
+          {
+            "node": "Filter Verified B2B Records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "apifyActorUrl": "https://apify.com/coherent_edelweiss/shopee-lazada-sea-ecommerce-api"
+  }
+}
