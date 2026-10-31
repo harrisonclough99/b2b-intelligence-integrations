@@ -416,5 +416,22 @@
       "ai_compliance_tech_pitch": "The London Roastery & Kitchen Ltd (Restaurant/Cafe/Canteen, FHRS Rating: 5) in London is a high-volume hospitality prospect for cloud POS, table ordering, and wholesale F&B supply.",
       "gdpr_safe_mode_applied": true
     }
+  },
+  "coherent_edelweiss/uk-public-tenders-contracts-finder": {
+    "category": "Public Procurement & GovTech",
+    "store_url": "https://apify.com/coherent_edelweiss/uk-public-tenders-contracts-finder",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "keywords": [
+        "software"
+      ],
+      "noticeStage": "tender",
+      "minValueGbp": 0,
+      "publishedWithinDays": 7,
+      "maxNotices": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {}
   }
 }

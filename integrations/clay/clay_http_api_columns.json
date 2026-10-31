@@ -216,6 +216,28 @@
         "gdprSafeMode": "auto"
       },
       "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Public Procurement & GovTech",
+      "actor_slug": "coherent_edelweiss/uk-public-tenders-contracts-finder",
+      "column_name": "UK Public Tenders & Contract Awards Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~uk-public-tenders-contracts-finder/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "keywords": [
+          "software"
+        ],
+        "noticeStage": "tender",
+        "minValueGbp": 0,
+        "publishedWithinDays": 7,
+        "maxNotices": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     }
   ]
 }
