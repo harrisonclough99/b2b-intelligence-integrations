@@ -1,6 +1,7 @@
 {
   "clay_http_api_templates": [
     {
+      "category": "B2B Lead & Contact Waterfall",
       "actor_slug": "coherent_edelweiss/google-maps-b2b-enricher",
       "column_name": "Google Maps B2B Lead, Email & Tech-Stack Enricher",
       "http_method": "POST",
@@ -17,9 +18,10 @@
         "includeAiPitch": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "B2B Lead & Contact Waterfall",
       "actor_slug": "coherent_edelweiss/verified-email-contact-finder",
       "column_name": "Verified B2B Email, Contact & Tech-Stack Finder",
       "http_method": "POST",
@@ -37,9 +39,10 @@
         "includeAiSummary": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "B2B Lead & Contact Waterfall",
       "actor_slug": "coherent_edelweiss/apollo-b2b-lead-enricher",
       "column_name": "Apollo.io B2B Leads, Org & Verified Email Enricher",
       "http_method": "POST",
@@ -60,9 +63,10 @@
         "includeAiHook": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "B2B Lead & Contact Waterfall",
       "actor_slug": "coherent_edelweiss/zoominfo-lusha-waterfall-enricher",
       "column_name": "ZoomInfo & Lusha B2B Company & Contact Waterfall API",
       "http_method": "POST",
@@ -78,9 +82,10 @@
         "includeAccountIntelligence": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "E-Commerce & Retail Intelligence",
       "actor_slug": "coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
       "column_name": "Shopee & Lazada SEA Product, Price & Velocity API",
       "http_method": "POST",
@@ -96,9 +101,10 @@
         "maxItemsPerKeyword": 3,
         "includeMerchandisingInsight": true
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "AI & Developer Ecosystem",
       "actor_slug": "coherent_edelweiss/mcp-server-ecosystem-index",
       "column_name": "MCP Server Registry, AI Tool & Maintainer Lead Enricher",
       "http_method": "POST",
@@ -114,9 +120,10 @@
         "includeAiSummary": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "Construction & Property Intelligence",
       "actor_slug": "coherent_edelweiss/uk-planning-construction-leads",
       "column_name": "UK Planning Applications & Construction Lead Enricher",
       "http_method": "POST",
@@ -133,9 +140,10 @@
         "includeAiPitch": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "Wealth Management & Financial Filings",
       "actor_slug": "coherent_edelweiss/sec-iapd-ria-wealth-enricher",
       "column_name": "SEC IAPD Registered Investment Adviser & Wealth Enricher",
       "http_method": "POST",
@@ -152,9 +160,10 @@
         "includeAiBrief": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "Healthcare & Medical Licensing",
       "actor_slug": "coherent_edelweiss/uk-cqc-care-homes-enricher",
       "column_name": "UK CQC Care Homes, Private Clinics & Healthcare Enricher",
       "http_method": "POST",
@@ -170,9 +179,10 @@
         "includeAiSummary": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "Healthcare & Medical Licensing",
       "actor_slug": "coherent_edelweiss/us-npi-healthcare-enricher",
       "column_name": "US CMS NPI Healthcare Provider & Medical Practice Enricher",
       "http_method": "POST",
@@ -188,9 +198,10 @@
         "includeAiPitch": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     },
     {
+      "category": "Hospitality & Food Service",
       "actor_slug": "coherent_edelweiss/uk-fsa-food-hygiene-leads",
       "column_name": "UK FSA Food Hygiene Ratings & Hospitality Lead Enricher",
       "http_method": "POST",
@@ -204,7 +215,7 @@
         "includeAiPitch": true,
         "gdprSafeMode": "auto"
       },
-      "pricing_model": "PAY_PER_EVENT ($0.002-$0.007 per verified record, $0 on empty)"
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     }
   ]
 }

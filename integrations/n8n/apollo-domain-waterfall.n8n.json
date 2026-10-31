@@ -57,7 +57,7 @@
         "conditions": {
           "boolean": [
             {
-              "value1": "={{Boolean($json.verified_emails || $json.enriched_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
+              "value1": "={{Boolean($json.verified_emails || $json.verified_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
               "value2": true
             }
           ]

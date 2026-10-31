@@ -1,5 +1,5 @@
 {
-  "name": "Google Maps Local Leads -> DNS MX Email & Ad Pixel Enricher -> CRM",
+  "name": "US CMS NPI Healthcare Provider & Clinic Lead Pipeline",
   "nodes": [
     {
       "parameters": {
@@ -24,7 +24,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.apify.com/v2/acts/coherent_edelweiss~google-maps-b2b-enricher/run-sync-get-dataset-items",
+        "url": "https://api.apify.com/v2/acts/coherent_edelweiss~us-npi-healthcare-enricher/run-sync-get-dataset-items",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -36,13 +36,13 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "{\n  \"queries\": [\n    \"specialty coffee roasters in Austin TX\"\n  ],\n  \"maxResultsPerQuery\": 3,\n  \"enrichWebsites\": true,\n  \"includeAiPitch\": true,\n  \"gdprSafeMode\": \"auto\"\n}",
+        "jsonBody": "{\n  \"taxonomyDescription\": \"Clinic\",\n  \"city\": \"Austin\",\n  \"state\": \"TX\",\n  \"maxProviders\": 3,\n  \"includeAiPitch\": true,\n  \"gdprSafeMode\": \"auto\"\n}",
         "options": {
           "timeout": 60000
         }
       },
       "id": "apify-actor-http-2",
-      "name": "Apify: coherent_edelweiss/google-maps-b2b-enricher",
+      "name": "Apify: coherent_edelweiss/us-npi-healthcare-enricher",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
@@ -50,14 +50,14 @@
         300
       ],
       "notesInFlow": true,
-      "notes": "Extracts local businesses, crawls their websites for MX-verified emails, CMS & ad pixels."
+      "notes": "Queries the official US CMS NPI Registry API by specialty & city for medical sales teams."
     },
     {
       "parameters": {
         "conditions": {
           "boolean": [
             {
-              "value1": "={{Boolean($json.verified_emails || $json.enriched_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
+              "value1": "={{Boolean($json.verified_emails || $json.verified_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
               "value2": true
             }
           ]
@@ -78,14 +78,14 @@
       "main": [
         [
           {
-            "node": "Apify: coherent_edelweiss/google-maps-b2b-enricher",
+            "node": "Apify: coherent_edelweiss/us-npi-healthcare-enricher",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Apify: coherent_edelweiss/google-maps-b2b-enricher": {
+    "Apify: coherent_edelweiss/us-npi-healthcare-enricher": {
       "main": [
         [
           {
@@ -102,6 +102,6 @@
   },
   "meta": {
     "templateCredsSetupCompleted": false,
-    "apifyActorUrl": "https://apify.com/coherent_edelweiss/google-maps-b2b-enricher"
+    "apifyActorUrl": "https://apify.com/coherent_edelweiss/us-npi-healthcare-enricher"
   }
 }

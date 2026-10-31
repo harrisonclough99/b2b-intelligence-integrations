@@ -1,6 +1,8 @@
 {
   "coherent_edelweiss/google-maps-b2b-enricher": {
+    "category": "B2B Lead & Contact Waterfall",
     "store_url": "https://apify.com/coherent_edelweiss/google-maps-b2b-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "queries": [
         "specialty coffee roasters in Austin TX"
@@ -10,10 +12,41 @@
       "includeAiPitch": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "query": "specialty coffee roasters in Austin TX",
+      "business_name": "Merit Coffee Co.",
+      "category": "specialty coffee roasters",
+      "address": "Austin, TX",
+      "website": "https://meritcoffee.com",
+      "domain": "meritcoffee.com",
+      "phone_e164": "+12105550192",
+      "rating": 4.8,
+      "reviews_count": 342,
+      "verified_emails": [
+        "info@meritcoffee.com",
+        "wholesale@meritcoffee.com"
+      ],
+      "mx_verified": true,
+      "email_provider": "Google Workspace",
+      "social_profiles": {
+        "instagram": "https://instagram.com/meritcoffee",
+        "facebook": "https://facebook.com/meritcoffee"
+      },
+      "cms_platform": "Shopify",
+      "ad_pixels_detected": [
+        "meta_pixel",
+        "google_tag_manager"
+      ],
+      "booking_or_crm_tools": [
+        "Klaviyo"
+      ],
+      "ai_b2b_sales_pitch": "Merit Coffee Co. runs on Shopify with Meta Pixel & GTM active, making them an ideal prospect for wholesale B2B retention automation or TikTok Pixel expansion."
+    }
   },
   "coherent_edelweiss/verified-email-contact-finder": {
+    "category": "B2B Lead & Contact Waterfall",
     "store_url": "https://apify.com/coherent_edelweiss/verified-email-contact-finder",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "domains": [
         "apify.com",
@@ -24,10 +57,43 @@
       "includeAiSummary": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "domain": "apify.com",
+      "website_title": "Apify: Full-stack web scraping and data extraction platform",
+      "mx_verified": true,
+      "email_provider": "Google Workspace",
+      "mx_records": [
+        "aspmx.l.google.com",
+        "alt1.aspmx.l.google.com"
+      ],
+      "verified_emails": [
+        "hello@apify.com",
+        "info@apify.com",
+        "sales@apify.com"
+      ],
+      "executive_email_guesses": [],
+      "phones_e164": [],
+      "social_profiles": {
+        "linkedin": "https://www.linkedin.com/company/apify",
+        "x": "https://x.com/apify",
+        "youtube": "https://www.youtube.com/apify"
+      },
+      "cms": "Next.js",
+      "ad_pixels": [
+        "google_tag_manager",
+        "linkedin_insight"
+      ],
+      "booking_and_crm_tools": [
+        "Intercom"
+      ],
+      "pages_crawled": 2,
+      "ai_domain_summary": "apify.com is a verified Google Workspace domain running on Next.js with Intercom and LinkedIn Insight Tag active."
+    }
   },
   "coherent_edelweiss/apollo-b2b-lead-enricher": {
+    "category": "B2B Lead & Contact Waterfall",
     "store_url": "https://apify.com/coherent_edelweiss/apollo-b2b-lead-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "companyDomains": [
         "apify.com",
@@ -41,10 +107,31 @@
       "includeAiHook": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "full_name": "CEO Department Lead (Apify)",
+      "job_title": "CEO",
+      "seniority": "C-Suite",
+      "department": "Executive",
+      "work_email": "info@apify.com",
+      "email_confidence": 0.95,
+      "mx_verified": true,
+      "email_provider": "Google Workspace",
+      "linkedin_url": "https://www.linkedin.com/company/apify",
+      "company_name": "Apify",
+      "company_domain": "apify.com",
+      "company_phone": "+14155550100",
+      "company_tech_stack": [
+        "Next.js",
+        "google_tag_manager",
+        "Intercom"
+      ],
+      "ai_outreach_hook": "Hi CEO team at Apify \u2014 noticed your team scales on Next.js with Intercom active; here is how teams automate outbound lead qualification."
+    }
   },
   "coherent_edelweiss/zoominfo-lusha-waterfall-enricher": {
+    "category": "B2B Lead & Contact Waterfall",
     "store_url": "https://apify.com/coherent_edelweiss/zoominfo-lusha-waterfall-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "companyDomains": [
         "apify.com",
@@ -53,10 +140,44 @@
       "includeAccountIntelligence": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "company_name": "Stripe",
+      "company_domain": "stripe.com",
+      "website_title": "Stripe | Financial Infrastructure for the Internet",
+      "primary_phone_e164": "+18889262289",
+      "mx_verified": true,
+      "email_gateway": "Google Workspace",
+      "mx_hosts": [
+        "aspmx.l.google.com",
+        "alt1.aspmx.l.google.com"
+      ],
+      "verified_contacts": [
+        {
+          "email": "info@stripe.com",
+          "source": "dns_mx_role_waterfall",
+          "confidence": 0.92
+        },
+        {
+          "email": "sales@stripe.com",
+          "source": "dns_mx_role_waterfall",
+          "confidence": 0.9
+        }
+      ],
+      "social_links": {
+        "linkedin": "https://www.linkedin.com/company/stripe"
+      },
+      "cms_platform": "Custom / Enterprise",
+      "tech_stack": [
+        "google_tag_manager",
+        "linkedin_insight"
+      ],
+      "account_intelligence_summary": "Stripe (stripe.com) operates on Google Workspace with active LinkedIn Insight & GTM instrumentation; verified corporate routing available via sales@ and info@."
+    }
   },
   "coherent_edelweiss/shopee-lazada-sea-ecommerce-api": {
+    "category": "E-Commerce & Retail Intelligence",
     "store_url": "https://apify.com/coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "keywords": [
         "wireless earbuds"
@@ -65,10 +186,33 @@
       "maxItemsPerKeyword": 3,
       "includeMerchandisingInsight": true
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "platform": "Shopee",
+      "region": "SG",
+      "keyword": "wireless earbuds",
+      "item_id": "sp-sg-1001",
+      "title": "Pro ANC Wireless Earbuds Bluetooth 5.3 Low Latency",
+      "product_url": "https://shopee.sg/search?keyword=wireless+earbuds",
+      "currency": "SGD",
+      "price_local": 39.9,
+      "price_usd": 29.73,
+      "discount_pct": 33.0,
+      "monthly_sold": 420,
+      "historical_sold": 3180,
+      "estimated_30d_revenue_usd": 12486.6,
+      "rating": 4.9,
+      "reviews_count": 845,
+      "shop_name": "Official Audio Mall SG",
+      "shop_location": "Singapore",
+      "is_official_store": true,
+      "in_stock": true,
+      "ai_merchandising_insight": "Strong velocity (420 units/30d, ~$12.5k USD GMV) at a 33% discount anchor; Official Mall badge sustains a 4.9 rating premium."
+    }
   },
   "coherent_edelweiss/mcp-server-ecosystem-index": {
+    "category": "AI & Developer Ecosystem",
     "store_url": "https://apify.com/coherent_edelweiss/mcp-server-ecosystem-index",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "searchQueries": [
         "mcp-server"
@@ -77,10 +221,34 @@
       "includeAiSummary": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "package_name": "@apify/actors-mcp-server",
+      "version": "0.2.0",
+      "description": "Model Context Protocol (MCP) server for all Apify Actors",
+      "npm_url": "https://www.npmjs.com/package/@apify/actors-mcp-server",
+      "repository_url": "https://github.com/apify/actors-mcp-server",
+      "homepage_url": "https://apify.com",
+      "maintainer_handle": "apify",
+      "maintainer_email": "info@apify.com",
+      "maintainer_domain": "apify.com",
+      "mx_verified": true,
+      "mx_provider": "Google Workspace",
+      "quality_score": 92.0,
+      "popularity_score": 88.5,
+      "keywords": [
+        "mcp",
+        "mcp-server",
+        "ai-agents",
+        "apify"
+      ],
+      "ai_partnership_summary": "@apify/actors-mcp-server (v0.2.0) is a top-scoring MCP server maintained by apify.com (Google Workspace verified).",
+      "gdpr_safe_mode_applied": false
+    }
   },
   "coherent_edelweiss/uk-planning-construction-leads": {
+    "category": "Construction & Property Intelligence",
     "store_url": "https://apify.com/coherent_edelweiss/uk-planning-construction-leads",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "boroughsOrCities": [
         "Westminster"
@@ -90,10 +258,37 @@
       "includeAiPitch": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "application_ref": "26/A91F0C/FUL",
+      "local_authority": "Westminster Planning Authority",
+      "proposal_description": "Commercial rooftop solar PV & MEP plant modernisation at 100 Victoria Street, Westminster",
+      "development_category": "Commercial / Mixed-Use",
+      "application_status": "Pending Consideration",
+      "site_address": "100 Victoria Street, Westminster",
+      "applicant_or_agent_firm": "Savills UK Planning & Development",
+      "agent_domain": "savills.co.uk",
+      "verified_role_emails": [
+        "info@savills.co.uk",
+        "enquiries@savills.co.uk"
+      ],
+      "phones_e164": [
+        "+442074998644"
+      ],
+      "mx_verified": true,
+      "email_provider": "Mimecast",
+      "cms_platform": "Custom / Enterprise",
+      "ad_pixels_detected": [
+        "google_tag_manager",
+        "linkedin_insight"
+      ],
+      "ai_construction_sales_pitch": "Active commercial planning proposal (26/A91F0C/FUL) in Westminster handled by Savills UK Planning & Development (savills.co.uk); ideal window for MEP, solar, glazing, and commercial fit-out tenders.",
+      "gdpr_safe_mode_applied": true
+    }
   },
   "coherent_edelweiss/sec-iapd-ria-wealth-enricher": {
+    "category": "Wealth Management & Financial Filings",
     "store_url": "https://apify.com/coherent_edelweiss/sec-iapd-ria-wealth-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "firmDomainsOrQueries": [
         "fisherinvestments.com",
@@ -103,10 +298,41 @@
       "includeAiBrief": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "crd_number": "107342",
+      "sec_number": "801-29362",
+      "firm_name": "Fisher Investments",
+      "hq_city_state": "Plano, TX",
+      "regulatory_aum_usd": 275000000000.0,
+      "client_types": [
+        "High Net Worth Individuals",
+        "Pooled Investment Vehicles",
+        "Institutions"
+      ],
+      "firm_domain": "fisherinvestments.com",
+      "verified_emails": [
+        "info@fisherinvestments.com",
+        "contact@fisherinvestments.com"
+      ],
+      "phones_e164": [
+        "+18888239566"
+      ],
+      "mx_verified": true,
+      "email_gateway": "Proofpoint",
+      "cms_platform": "Custom / Enterprise",
+      "tech_stack": [
+        "google_tag_manager",
+        "meta_pixel",
+        "linkedin_insight"
+      ],
+      "ai_wealth_outreach_brief": "Fisher Investments (CRD #107342, SEC #801-29362) manages ~$275,000M USD in regulatory AUM out of Plano, TX; mail routed via Proofpoint with verified contact channels.",
+      "gdpr_safe_mode_applied": false
+    }
   },
   "coherent_edelweiss/uk-cqc-care-homes-enricher": {
+    "category": "Healthcare & Medical Licensing",
     "store_url": "https://apify.com/coherent_edelweiss/uk-cqc-care-homes-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "providerDomainsOrRegions": [
         "careuk.com",
@@ -115,10 +341,35 @@
       "includeAiSummary": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "cqc_location_id": "1-148291034",
+      "provider_name": "Care UK",
+      "service_type": "Care home service with nursing",
+      "overall_rating": "Good",
+      "bed_capacity": 68,
+      "region": "South East & London",
+      "provider_domain": "careuk.com",
+      "verified_role_emails": [
+        "info@careuk.com",
+        "enquiries@careuk.com"
+      ],
+      "phones_e164": [
+        "+443333210920"
+      ],
+      "mx_verified": true,
+      "email_provider": "Microsoft 365",
+      "cms_platform": "Custom / Enterprise",
+      "booking_or_crm_tools": [
+        "HubSpot"
+      ],
+      "ai_healthcare_b2b_summary": "Care UK (Care home service with nursing, 68 beds, CQC Rating: Good) operates on careuk.com (Microsoft 365); ideal prospect for clinical staffing, care compliance SaaS, or medical supplies.",
+      "gdpr_safe_mode_applied": true
+    }
   },
   "coherent_edelweiss/us-npi-healthcare-enricher": {
+    "category": "Healthcare & Medical Licensing",
     "store_url": "https://apify.com/coherent_edelweiss/us-npi-healthcare-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "taxonomyDescription": "Clinic",
       "city": "Austin",
@@ -127,16 +378,43 @@
       "includeAiPitch": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "npi_number": "1043218901",
+      "enumeration_type": "NPI-2",
+      "provider_or_org_name": "Austin Regional Clinic",
+      "primary_taxonomy": "Clinic/Center",
+      "taxonomy_code": "261Q00000X",
+      "authorized_official": "Chief Medical Officer",
+      "address": "811 Barton Springs Rd, Austin, TX 78704",
+      "city": "Austin",
+      "state": "TX",
+      "postal_code": "78704",
+      "practice_phone_e164": "+15122724636",
+      "status": "Active",
+      "ai_medical_sales_pitch": "Austin Regional Clinic (NPI #1043218901, Clinic/Center) in Austin, TX is an active healthcare provider; verified practice line +15122724636 for EHR, RCM billing, or medical device outreach."
+    }
   },
   "coherent_edelweiss/uk-fsa-food-hygiene-leads": {
+    "category": "Hospitality & Food Service",
     "store_url": "https://apify.com/coherent_edelweiss/uk-fsa-food-hygiene-leads",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
     "sample_input": {
       "searchKeywordOrCity": "London",
       "maxEstablishments": 3,
       "includeAiPitch": true,
       "gdprSafeMode": "auto"
     },
-    "pricing_guarantee": "PAY_PER_EVENT \u2014 Zero-Charge on Empty/Failed Records"
+    "sample_output": {
+      "fhrs_id": "1529104",
+      "business_name": "The London Roastery & Kitchen Ltd",
+      "business_type": "Restaurant/Cafe/Canteen",
+      "hygiene_rating": "5",
+      "rating_date": "2026-02-14",
+      "address": "142 Shoreditch High Street, London",
+      "postcode": "E1 6JE",
+      "local_authority": "London Borough of Hackney",
+      "ai_compliance_tech_pitch": "The London Roastery & Kitchen Ltd (Restaurant/Cafe/Canteen, FHRS Rating: 5) in London is a high-volume hospitality prospect for cloud POS, table ordering, and wholesale F&B supply.",
+      "gdpr_safe_mode_applied": true
+    }
   }
 }

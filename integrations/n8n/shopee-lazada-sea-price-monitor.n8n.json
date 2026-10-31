@@ -1,5 +1,5 @@
 {
-  "name": "US CMS NPI Healthcare Provider & Clinic Lead Pipeline",
+  "name": "Shopee & Lazada SEA Multi-Currency Price & 30d Sales Velocity Tracker",
   "nodes": [
     {
       "parameters": {
@@ -24,7 +24,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.apify.com/v2/acts/coherent_edelweiss~us-npi-healthcare-enricher/run-sync-get-dataset-items",
+        "url": "https://api.apify.com/v2/acts/coherent_edelweiss~shopee-lazada-sea-ecommerce-api/run-sync-get-dataset-items",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -36,13 +36,13 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "{\n  \"taxonomyDescription\": \"Clinic\",\n  \"city\": \"Austin\",\n  \"state\": \"TX\",\n  \"maxProviders\": 3,\n  \"includeAiPitch\": true,\n  \"gdprSafeMode\": \"auto\"\n}",
+        "jsonBody": "{\n  \"keywords\": [\n    \"wireless earbuds\"\n  ],\n  \"region\": \"SG\",\n  \"maxItemsPerKeyword\": 3,\n  \"includeMerchandisingInsight\": true\n}",
         "options": {
           "timeout": 60000
         }
       },
       "id": "apify-actor-http-2",
-      "name": "Apify: coherent_edelweiss/us-npi-healthcare-enricher",
+      "name": "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
@@ -50,14 +50,14 @@
         300
       ],
       "notesInFlow": true,
-      "notes": "Queries the official US CMS NPI Registry API by specialty & city for medical sales teams."
+      "notes": "Extracts Southeast Asia e-commerce SKU prices normalized to USD with 30-day sales velocity."
     },
     {
       "parameters": {
         "conditions": {
           "boolean": [
             {
-              "value1": "={{Boolean($json.verified_emails || $json.enriched_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
+              "value1": "={{Boolean($json.verified_emails || $json.verified_contacts || $json.verified_role_emails || $json.price_usd || $json.npi_number)}}",
               "value2": true
             }
           ]
@@ -78,14 +78,14 @@
       "main": [
         [
           {
-            "node": "Apify: coherent_edelweiss/us-npi-healthcare-enricher",
+            "node": "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Apify: coherent_edelweiss/us-npi-healthcare-enricher": {
+    "Apify: coherent_edelweiss/shopee-lazada-sea-ecommerce-api": {
       "main": [
         [
           {
@@ -102,6 +102,6 @@
   },
   "meta": {
     "templateCredsSetupCompleted": false,
-    "apifyActorUrl": "https://apify.com/coherent_edelweiss/us-npi-healthcare-enricher"
+    "apifyActorUrl": "https://apify.com/coherent_edelweiss/shopee-lazada-sea-ecommerce-api"
   }
 }
