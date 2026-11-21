@@ -339,6 +339,296 @@
         "gdprSafeMode": "auto"
       },
       "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Financial Compliance & Corporate Registries",
+      "actor_slug": "coherent_edelweiss/uk-companies-house-psc-enricher",
+      "column_name": "UK Companies House, Officers & PSC Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~uk-companies-house-psc-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchQueries": [
+          "monzo"
+        ],
+        "companyDomains": [],
+        "maxCompaniesPerQuery": 2,
+        "includeOfficersAndPsc": true,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Social Media & Creator Intelligence",
+      "actor_slug": "coherent_edelweiss/bluesky-atproto-b2b-lead-scraper",
+      "column_name": "Bluesky AT Protocol Profiles & B2B Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~bluesky-atproto-b2b-lead-scraper/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchQueries": [
+          "founder"
+        ],
+        "maxProfilesPerQuery": 3,
+        "enrichDomains": true,
+        "includeAiHook": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Creator Economy & B2B Events",
+      "actor_slug": "coherent_edelweiss/substack-b2b-newsletter-enricher",
+      "column_name": "Substack B2B Newsletters & Sponsor Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~substack-b2b-newsletter-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "categoryNames": [
+          "Technology"
+        ],
+        "maxPublications": 3,
+        "enrichCustomDomains": true,
+        "includeAiPitch": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Public Procurement & GovTech",
+      "actor_slug": "coherent_edelweiss/us-federal-contracts-usaspending",
+      "column_name": "US Federal Contract Awards & GovCon Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~us-federal-contracts-usaspending/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "keywords": [
+          "software"
+        ],
+        "minAwardUsd": 0,
+        "maxAwards": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Nonprofits, Charities & Grants",
+      "actor_slug": "coherent_edelweiss/us-federal-grants-opportunities",
+      "column_name": "US Federal Grants & Funding Opportunity Scraper",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~us-federal-grants-opportunities/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "keyword": "health",
+        "oppStatus": "posted",
+        "maxOpportunities": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Healthcare & Medical Licensing",
+      "actor_slug": "coherent_edelweiss/fda-drug-device-approvals-api",
+      "column_name": "openFDA Drug & 510(k) Medical Device Approvals API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~fda-drug-device-approvals-api/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "dataset": "both",
+        "searchTerm": "",
+        "maxPerDataset": 2,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Wealth Management & Financial Filings",
+      "actor_slug": "coherent_edelweiss/sec-edgar-form-d-fundraising",
+      "column_name": "SEC EDGAR Form D Startup Fundraising & Filings API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~sec-edgar-form-d-fundraising/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "query": "",
+        "forms": [
+          "D"
+        ],
+        "lookbackDays": 30,
+        "maxFilings": 3,
+        "includeAiSignal": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Financial Compliance & Corporate Registries",
+      "actor_slug": "coherent_edelweiss/gleif-global-lei-kyb-enricher",
+      "column_name": "GLEIF Global LEI & KYB Corporate Registry Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~gleif-global-lei-kyb-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "entityQueries": [
+          "stripe",
+          "apify"
+        ],
+        "maxResultsPerQuery": 2,
+        "includeAiSummary": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Startup & Venture Capital Deal Flow",
+      "actor_slug": "coherent_edelweiss/yc-startup-directory-mx-enricher",
+      "column_name": "Y Combinator Startup Directory & MX Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~yc-startup-directory-mx-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "datasetFeed": "top",
+        "industryFilter": "",
+        "onlyHiring": false,
+        "maxCompanies": 3,
+        "enrichDomains": true,
+        "includeAiHook": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Construction & Property Intelligence",
+      "actor_slug": "coherent_edelweiss/uk-land-registry-property-sales",
+      "column_name": "UK HM Land Registry Property Price Paid Data API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~uk-land-registry-property-sales/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "town": "LONDON",
+        "postcode": "",
+        "maxRecords": 3,
+        "includeAiInsight": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Public Procurement & GovTech",
+      "actor_slug": "coherent_edelweiss/worldbank-global-tenders-api",
+      "column_name": "World Bank Global Procurement & Tenders API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~worldbank-global-tenders-api/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchTerm": "software",
+        "countryFilter": "",
+        "maxNotices": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Automotive & Fleet Intelligence",
+      "actor_slug": "coherent_edelweiss/nhtsa-automotive-recalls-vin",
+      "column_name": "US NHTSA Automotive Recalls & VIN Decoder API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~nhtsa-automotive-recalls-vin/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "make": "Ford",
+        "model": "F-150",
+        "modelYear": 2024,
+        "vin": "1FTFW1E50NFA00001",
+        "maxRecalls": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Legal & Regulatory Compliance",
+      "actor_slug": "coherent_edelweiss/federal-register-regulatory-api",
+      "column_name": "US Federal Register Rules & Regulatory Monitor API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~federal-register-regulatory-api/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchTerm": "artificial intelligence",
+        "documentType": "",
+        "maxDocuments": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "B2B Lead & Contact Waterfall",
+      "actor_slug": "coherent_edelweiss/wordpress-plugin-saas-leads",
+      "column_name": "WordPress Plugin Ecosystem & SaaS Vendor Leads API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~wordpress-plugin-saas-leads/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchQueries": [
+          "woocommerce"
+        ],
+        "maxPluginsPerQuery": 3,
+        "enrichVendorDomains": true,
+        "includeAiHook": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "AI & Developer Ecosystem",
+      "actor_slug": "coherent_edelweiss/huggingface-ai-models-spaces-api",
+      "column_name": "Hugging Face AI Models & Agent Spaces Leaderboard",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~huggingface-ai-models-spaces-api/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchQuery": "mcp",
+        "assetType": "both",
+        "maxPerType": 2,
+        "includeAiSummary": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
     }
   ]
 }

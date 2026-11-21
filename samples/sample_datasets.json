@@ -560,5 +560,330 @@
       "study_url": "https://clinicaltrials.gov/study/NCT06953076",
       "gdpr_safe_mode_applied": true
     }
+  },
+  "coherent_edelweiss/uk-companies-house-psc-enricher": {
+    "category": "Financial Compliance & Corporate Registries",
+    "store_url": "https://apify.com/coherent_edelweiss/uk-companies-house-psc-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchQueries": [
+        "monzo"
+      ],
+      "companyDomains": [],
+      "maxCompaniesPerQuery": 2,
+      "includeOfficersAndPsc": true,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "company_number": "09446231",
+      "company_name": "MONZO BANK LIMITED",
+      "company_status": "Active",
+      "incorporated_on": "17 February 2015",
+      "sic_codes": [
+        "64191 - Banks"
+      ],
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/bluesky-atproto-b2b-lead-scraper": {
+    "category": "Social Media & Creator Intelligence",
+    "store_url": "https://apify.com/coherent_edelweiss/bluesky-atproto-b2b-lead-scraper",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchQueries": [
+        "founder"
+      ],
+      "maxProfilesPerQuery": 3,
+      "enrichDomains": true,
+      "includeAiHook": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "did": "did:plc:z72i7hdynmk6r22z27h6tvur",
+      "handle": "bsky.app",
+      "display_name": "Bluesky",
+      "followers_count": 35000000,
+      "website_domain": "bsky.app",
+      "mx_verified": true,
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/substack-b2b-newsletter-enricher": {
+    "category": "Creator Economy & B2B Events",
+    "store_url": "https://apify.com/coherent_edelweiss/substack-b2b-newsletter-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "categoryNames": [
+        "Technology"
+      ],
+      "maxPublications": 3,
+      "enrichCustomDomains": true,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "publication_id": "817132",
+      "name": "ByteByteGo Newsletter",
+      "custom_domain": "blog.bytebytego.com",
+      "author_name": "Alex Xu",
+      "category_name": "Technology",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/us-federal-contracts-usaspending": {
+    "category": "Public Procurement & GovTech",
+    "store_url": "https://apify.com/coherent_edelweiss/us-federal-contracts-usaspending",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "keywords": [
+        "software"
+      ],
+      "minAwardUsd": 0,
+      "maxAwards": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "award_id": "ZZ03",
+      "recipient_name": "COUNTERTRADE PRODUCTS, INC.",
+      "award_amount_usd": 52436.39,
+      "awarding_agency": "Department of Defense",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/us-federal-grants-opportunities": {
+    "category": "Nonprofits, Charities & Grants",
+    "store_url": "https://apify.com/coherent_edelweiss/us-federal-grants-opportunities",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "keyword": "health",
+      "oppStatus": "posted",
+      "maxOpportunities": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "opportunity_id": "361754",
+      "opportunity_number": "PA-FPH-27-001",
+      "title": "Title X Family Planning Services Grants",
+      "agency_code": "HHS-OPHS",
+      "close_date": "01/11/2027",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/fda-drug-device-approvals-api": {
+    "category": "Healthcare & Medical Licensing",
+    "store_url": "https://apify.com/coherent_edelweiss/fda-drug-device-approvals-api",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "dataset": "both",
+      "searchTerm": "",
+      "maxPerDataset": 2,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "record_type": "Device 510(k)",
+      "application_or_k_number": "K240101",
+      "sponsor_or_applicant": "MedTech Labs Inc.",
+      "product_or_device_name": "Medical Imaging System",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/sec-edgar-form-d-fundraising": {
+    "category": "Wealth Management & Financial Filings",
+    "store_url": "https://apify.com/coherent_edelweiss/sec-edgar-form-d-fundraising",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "query": "",
+      "forms": [
+        "D"
+      ],
+      "lookbackDays": 30,
+      "maxFilings": 3,
+      "includeAiSignal": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "accession_number": "0002166434-26-000001",
+      "cik": "0002166434",
+      "issuer_name": "Blue Spruce Management, Inc.",
+      "form_type": "D",
+      "file_date": "2026-11-20",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/gleif-global-lei-kyb-enricher": {
+    "category": "Financial Compliance & Corporate Registries",
+    "store_url": "https://apify.com/coherent_edelweiss/gleif-global-lei-kyb-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "entityQueries": [
+        "stripe",
+        "apify"
+      ],
+      "maxResultsPerQuery": 2,
+      "includeAiSummary": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "lei": "549300XXXXXXXXXXXX01",
+      "legal_name": "STRIPE",
+      "entity_status": "ACTIVE",
+      "jurisdiction": "BE",
+      "headquarters_country": "BE",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/yc-startup-directory-mx-enricher": {
+    "category": "Startup & Venture Capital Deal Flow",
+    "store_url": "https://apify.com/coherent_edelweiss/yc-startup-directory-mx-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "datasetFeed": "top",
+      "industryFilter": "",
+      "onlyHiring": false,
+      "maxCompanies": 3,
+      "enrichDomains": true,
+      "includeAiHook": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "yc_id": "8",
+      "company_name": "PlanGrid",
+      "batch": "W12",
+      "industry": "B2B",
+      "domain": "plangrid.com",
+      "mx_verified": true,
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/uk-land-registry-property-sales": {
+    "category": "Construction & Property Intelligence",
+    "store_url": "https://apify.com/coherent_edelweiss/uk-land-registry-property-sales",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "town": "LONDON",
+      "postcode": "",
+      "maxRecords": 3,
+      "includeAiInsight": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "transaction_id": "702EF0D1",
+      "price_paid_gbp": 450000.0,
+      "postcode": "SW1A 1AA",
+      "town": "LONDON",
+      "property_type": "Terraced",
+      "estate_type": "Freehold",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/worldbank-global-tenders-api": {
+    "category": "Public Procurement & GovTech",
+    "store_url": "https://apify.com/coherent_edelweiss/worldbank-global-tenders-api",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchTerm": "software",
+      "countryFilter": "",
+      "maxNotices": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "notice_id": "OP00482631",
+      "notice_type": "Contract Award",
+      "country_name": "Angola",
+      "project_id": "P179154",
+      "notice_date": "19-Nov-2026",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/nhtsa-automotive-recalls-vin": {
+    "category": "Automotive & Fleet Intelligence",
+    "store_url": "https://apify.com/coherent_edelweiss/nhtsa-automotive-recalls-vin",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "make": "Ford",
+      "model": "F-150",
+      "modelYear": 2024,
+      "vin": "1FTFW1E50NFA00001",
+      "maxRecalls": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "campaign_number": "24V329000",
+      "manufacturer": "Ford Motor Company",
+      "make": "FORD",
+      "model": "F-150",
+      "model_year": "2024",
+      "component": "STEERING:COLUMN",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/federal-register-regulatory-api": {
+    "category": "Legal & Regulatory Compliance",
+    "store_url": "https://apify.com/coherent_edelweiss/federal-register-regulatory-api",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchTerm": "artificial intelligence",
+      "documentType": "",
+      "maxDocuments": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "document_number": "2026-21001",
+      "title": "American AI Exports Program",
+      "document_type": "Notice",
+      "agencies": [
+        "Department of Commerce"
+      ],
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/wordpress-plugin-saas-leads": {
+    "category": "B2B Lead & Contact Waterfall",
+    "store_url": "https://apify.com/coherent_edelweiss/wordpress-plugin-saas-leads",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchQueries": [
+        "woocommerce"
+      ],
+      "maxPluginsPerQuery": 3,
+      "enrichVendorDomains": true,
+      "includeAiHook": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "plugin_slug": "woocommerce",
+      "plugin_name": "WooCommerce",
+      "active_installs": 7000000,
+      "vendor_domain": "woocommerce.com",
+      "mx_verified": true,
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/huggingface-ai-models-spaces-api": {
+    "category": "AI & Developer Ecosystem",
+    "store_url": "https://apify.com/coherent_edelweiss/huggingface-ai-models-spaces-api",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchQuery": "mcp",
+      "assetType": "both",
+      "maxPerType": 2,
+      "includeAiSummary": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "asset_type": "Space",
+      "asset_id": "Agents-MCP-Hackathon/Graphify",
+      "pipeline_or_sdk": "gradio",
+      "likes": 204,
+      "asset_url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/Graphify",
+      "gdpr_safe_mode_applied": true
+    }
   }
 }

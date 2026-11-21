@@ -10,7 +10,7 @@ Real-time **B2B Lead Enrichment, Live DNS-over-HTTPS MX Email Verification, Webs
 
 ---
 
-## Live Apify Store Catalog (17 Specialized B2B Actors)
+## Live Apify Store Catalog (32 Specialized B2B Actors)
 
 | Category | Actor & Apify Store Link | What It Extracts | Synchronous HTTP Endpoint (`POST`) |
 | :--- | :--- | :--- | :--- |
@@ -31,6 +31,21 @@ Real-time **B2B Lead Enrichment, Live DNS-over-HTTPS MX Email Verification, Webs
 | **Creator Economy & B2B Events** | **[Lu.ma Tech, VC & B2B Event Directory & Host Lead Enricher](https://apify.com/coherent_edelweiss/luma-events-b2b-leads)** (`coherent_edelweiss/luma-events-b2b-leads`) | Lu.ma Event Directory, Host & Sponsor Lead Scraper API | `https://api.apify.com/v2/acts/coherent_edelweiss~luma-events-b2b-leads/run-sync-get-dataset-items` |
 | **Jobs, Recruiting & Hiring Intent** | **[Startup ATS Hiring Intent API (Ashby, Greenhouse & Lever)](https://apify.com/coherent_edelweiss/startup-ats-hiring-intent)** (`coherent_edelweiss/startup-ats-hiring-intent`) | Ashby, Greenhouse & Lever ATS Job & Hiring Intent API | `https://api.apify.com/v2/acts/coherent_edelweiss~startup-ats-hiring-intent/run-sync-get-dataset-items` |
 | **Healthcare & Medical Licensing** | **[ClinicalTrials.gov Sponsor & Biotech Lead Enricher API](https://apify.com/coherent_edelweiss/clinicaltrials-sponsor-lead-enricher)** (`coherent_edelweiss/clinicaltrials-sponsor-lead-enricher`) | ClinicalTrials.gov Pharma, CRO & Sponsor Lead Scraper API | `https://api.apify.com/v2/acts/coherent_edelweiss~clinicaltrials-sponsor-lead-enricher/run-sync-get-dataset-items` |
+| **Financial Compliance & Corporate Registries** | **[UK Companies House, Officers & PSC Lead Enricher](https://apify.com/coherent_edelweiss/uk-companies-house-psc-enricher)** (`coherent_edelweiss/uk-companies-house-psc-enricher`) | UK Companies House, Officers & PSC Lead Scraper API | `https://api.apify.com/v2/acts/coherent_edelweiss~uk-companies-house-psc-enricher/run-sync-get-dataset-items` |
+| **Social Media & Creator Intelligence** | **[Bluesky AT Protocol Profiles & B2B Lead Enricher](https://apify.com/coherent_edelweiss/bluesky-atproto-b2b-lead-scraper)** (`coherent_edelweiss/bluesky-atproto-b2b-lead-scraper`) | Bluesky (AT Protocol) Profile & B2B Lead Scraper API | `https://api.apify.com/v2/acts/coherent_edelweiss~bluesky-atproto-b2b-lead-scraper/run-sync-get-dataset-items` |
+| **Creator Economy & B2B Events** | **[Substack B2B Newsletters & Sponsor Lead Enricher](https://apify.com/coherent_edelweiss/substack-b2b-newsletter-enricher)** (`coherent_edelweiss/substack-b2b-newsletter-enricher`) | Substack Newsletter Directory & Sponsor Lead Scraper | `https://api.apify.com/v2/acts/coherent_edelweiss~substack-b2b-newsletter-enricher/run-sync-get-dataset-items` |
+| **Public Procurement & GovTech** | **[US Federal Contract Awards & GovCon Lead Enricher](https://apify.com/coherent_edelweiss/us-federal-contracts-usaspending)** (`coherent_edelweiss/us-federal-contracts-usaspending`) | US Federal Contracts & GovCon Awards API (USAspending) | `https://api.apify.com/v2/acts/coherent_edelweiss~us-federal-contracts-usaspending/run-sync-get-dataset-items` |
+| **Nonprofits, Charities & Grants** | **[US Federal Grants & Funding Opportunity Scraper](https://apify.com/coherent_edelweiss/us-federal-grants-opportunities)** (`coherent_edelweiss/us-federal-grants-opportunities`) | Grants.gov US Federal Grants & Funding API Scraper | `https://api.apify.com/v2/acts/coherent_edelweiss~us-federal-grants-opportunities/run-sync-get-dataset-items` |
+| **Healthcare & Medical Licensing** | **[openFDA Drug & 510(k) Medical Device Approvals API](https://apify.com/coherent_edelweiss/fda-drug-device-approvals-api)** (`coherent_edelweiss/fda-drug-device-approvals-api`) | FDA Drug & 510(k) Medical Device Approvals API | `https://api.apify.com/v2/acts/coherent_edelweiss~fda-drug-device-approvals-api/run-sync-get-dataset-items` |
+| **Wealth Management & Financial Filings** | **[SEC EDGAR Form D Startup Fundraising & Filings API](https://apify.com/coherent_edelweiss/sec-edgar-form-d-fundraising)** (`coherent_edelweiss/sec-edgar-form-d-fundraising`) | SEC EDGAR Form D Fundraising & Private Offerings API | `https://api.apify.com/v2/acts/coherent_edelweiss~sec-edgar-form-d-fundraising/run-sync-get-dataset-items` |
+| **Financial Compliance & Corporate Registries** | **[GLEIF Global LEI & KYB Corporate Registry Enricher](https://apify.com/coherent_edelweiss/gleif-global-lei-kyb-enricher)** (`coherent_edelweiss/gleif-global-lei-kyb-enricher`) | GLEIF Global LEI & KYB Entity Verification API | `https://api.apify.com/v2/acts/coherent_edelweiss~gleif-global-lei-kyb-enricher/run-sync-get-dataset-items` |
+| **Startup & Venture Capital Deal Flow** | **[Y Combinator Startup Directory & MX Lead Enricher](https://apify.com/coherent_edelweiss/yc-startup-directory-mx-enricher)** (`coherent_edelweiss/yc-startup-directory-mx-enricher`) | Y Combinator Startup Directory & MX Email Enricher | `https://api.apify.com/v2/acts/coherent_edelweiss~yc-startup-directory-mx-enricher/run-sync-get-dataset-items` |
+| **Construction & Property Intelligence** | **[UK HM Land Registry Property Price Paid Data API](https://apify.com/coherent_edelweiss/uk-land-registry-property-sales)** (`coherent_edelweiss/uk-land-registry-property-sales`) | UK Land Registry Property Sales & Price Paid API | `https://api.apify.com/v2/acts/coherent_edelweiss~uk-land-registry-property-sales/run-sync-get-dataset-items` |
+| **Public Procurement & GovTech** | **[World Bank Global Procurement & Tenders API](https://apify.com/coherent_edelweiss/worldbank-global-tenders-api)** (`coherent_edelweiss/worldbank-global-tenders-api`) | World Bank Global Public Tenders & Procurement API | `https://api.apify.com/v2/acts/coherent_edelweiss~worldbank-global-tenders-api/run-sync-get-dataset-items` |
+| **Automotive & Fleet Intelligence** | **[US NHTSA Automotive Recalls & VIN Decoder API](https://apify.com/coherent_edelweiss/nhtsa-automotive-recalls-vin)** (`coherent_edelweiss/nhtsa-automotive-recalls-vin`) | NHTSA Vehicle Safety Recalls & VIN Decoder API | `https://api.apify.com/v2/acts/coherent_edelweiss~nhtsa-automotive-recalls-vin/run-sync-get-dataset-items` |
+| **Legal & Regulatory Compliance** | **[US Federal Register Rules & Regulatory Monitor API](https://apify.com/coherent_edelweiss/federal-register-regulatory-api)** (`coherent_edelweiss/federal-register-regulatory-api`) | US Federal Register Rules & Regulatory Monitor API | `https://api.apify.com/v2/acts/coherent_edelweiss~federal-register-regulatory-api/run-sync-get-dataset-items` |
+| **B2B Lead & Contact Waterfall** | **[WordPress Plugin Ecosystem & SaaS Vendor Leads API](https://apify.com/coherent_edelweiss/wordpress-plugin-saas-leads)** (`coherent_edelweiss/wordpress-plugin-saas-leads`) | WordPress Plugin Directory & SaaS Vendor Lead API | `https://api.apify.com/v2/acts/coherent_edelweiss~wordpress-plugin-saas-leads/run-sync-get-dataset-items` |
+| **AI & Developer Ecosystem** | **[Hugging Face AI Models & Agent Spaces Leaderboard](https://apify.com/coherent_edelweiss/huggingface-ai-models-spaces-api)** (`coherent_edelweiss/huggingface-ai-models-spaces-api`) | Hugging Face AI Models & MCP Spaces Leaderboard API | `https://api.apify.com/v2/acts/coherent_edelweiss~huggingface-ai-models-spaces-api/run-sync-get-dataset-items` |
 
 ---
 
@@ -40,7 +55,7 @@ Skip expensive enrichment credits in Clay by adding an **HTTP API** column point
 1. **Method:** `POST`
 2. **URL:** `https://api.apify.com/v2/acts/coherent_edelweiss~verified-email-contact-finder/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN`
 3. **Headers:** `Content-Type: application/json`
-4. **Body:** See ready-to-copy templates for all 17 Actors in [`integrations/clay/clay_http_api_columns.json`](./integrations/clay/clay_http_api_columns.json).
+4. **Body:** See ready-to-copy templates for all 32 Actors in [`integrations/clay/clay_http_api_columns.json`](./integrations/clay/clay_http_api_columns.json).
 
 ---
 
@@ -55,7 +70,7 @@ Import any workflow from [`integrations/n8n/`](./integrations/n8n/) directly int
 
 ---
 
-## Quickstart 3: Connect All 17 Actors to Claude Desktop or Cursor (MCP)
+## Quickstart 3: Connect All 32 Actors to Claude Desktop or Cursor (MCP)
 
 Copy [`integrations/mcp/claude_cursor_mcp_config.json`](./integrations/mcp/claude_cursor_mcp_config.json) into your `claude_desktop_config.json` or `.cursor/mcp.json`:
 
@@ -68,7 +83,7 @@ Copy [`integrations/mcp/claude_cursor_mcp_config.json`](./integrations/mcp/claud
         "-y",
         "@apify/actors-mcp-server",
         "--actors",
-        "coherent_edelweiss/google-maps-b2b-enricher,coherent_edelweiss/verified-email-contact-finder,coherent_edelweiss/apollo-b2b-lead-enricher,coherent_edelweiss/zoominfo-lusha-waterfall-enricher,coherent_edelweiss/shopee-lazada-sea-ecommerce-api,coherent_edelweiss/mcp-server-ecosystem-index,coherent_edelweiss/uk-planning-construction-leads,coherent_edelweiss/sec-iapd-ria-wealth-enricher,coherent_edelweiss/uk-cqc-care-homes-enricher,coherent_edelweiss/us-npi-healthcare-enricher,coherent_edelweiss/uk-fsa-food-hygiene-leads,coherent_edelweiss/uk-public-tenders-contracts-finder,coherent_edelweiss/us-nonprofit-irs990-enricher,coherent_edelweiss/polymarket-kalshi-prediction-odds,coherent_edelweiss/luma-events-b2b-leads,coherent_edelweiss/startup-ats-hiring-intent,coherent_edelweiss/clinicaltrials-sponsor-lead-enricher"
+        "coherent_edelweiss/google-maps-b2b-enricher,coherent_edelweiss/verified-email-contact-finder,coherent_edelweiss/apollo-b2b-lead-enricher,coherent_edelweiss/zoominfo-lusha-waterfall-enricher,coherent_edelweiss/shopee-lazada-sea-ecommerce-api,coherent_edelweiss/mcp-server-ecosystem-index,coherent_edelweiss/uk-planning-construction-leads,coherent_edelweiss/sec-iapd-ria-wealth-enricher,coherent_edelweiss/uk-cqc-care-homes-enricher,coherent_edelweiss/us-npi-healthcare-enricher,coherent_edelweiss/uk-fsa-food-hygiene-leads,coherent_edelweiss/uk-public-tenders-contracts-finder,coherent_edelweiss/us-nonprofit-irs990-enricher,coherent_edelweiss/polymarket-kalshi-prediction-odds,coherent_edelweiss/luma-events-b2b-leads,coherent_edelweiss/startup-ats-hiring-intent,coherent_edelweiss/clinicaltrials-sponsor-lead-enricher,coherent_edelweiss/uk-companies-house-psc-enricher,coherent_edelweiss/bluesky-atproto-b2b-lead-scraper,coherent_edelweiss/substack-b2b-newsletter-enricher,coherent_edelweiss/us-federal-contracts-usaspending,coherent_edelweiss/us-federal-grants-opportunities,coherent_edelweiss/fda-drug-device-approvals-api,coherent_edelweiss/sec-edgar-form-d-fundraising,coherent_edelweiss/gleif-global-lei-kyb-enricher,coherent_edelweiss/yc-startup-directory-mx-enricher,coherent_edelweiss/uk-land-registry-property-sales,coherent_edelweiss/worldbank-global-tenders-api,coherent_edelweiss/nhtsa-automotive-recalls-vin,coherent_edelweiss/federal-register-regulatory-api,coherent_edelweiss/wordpress-plugin-saas-leads,coherent_edelweiss/huggingface-ai-models-spaces-api"
       ],
       "env": {
         "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
@@ -82,4 +97,4 @@ Copy [`integrations/mcp/claude_cursor_mcp_config.json`](./integrations/mcp/claud
 
 ## Sample Input & Enriched Output Datasets
 
-Inspect complete sample inputs and verified JSON outputs for all 17 Actors in [`samples/sample_datasets.json`](./samples/sample_datasets.json).
+Inspect complete sample inputs and verified JSON outputs for all 32 Actors in [`samples/sample_datasets.json`](./samples/sample_datasets.json).
