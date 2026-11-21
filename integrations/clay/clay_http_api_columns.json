@@ -232,8 +232,109 @@
         ],
         "noticeStage": "tender",
         "minValueGbp": 0,
-        "publishedWithinDays": 7,
+        "publishedWithinDays": 30,
         "maxNotices": 3,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Nonprofits, Charities & Grants",
+      "actor_slug": "coherent_edelweiss/us-nonprofit-irs990-enricher",
+      "column_name": "US Nonprofit, Charity & IRS 990 Grant Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~us-nonprofit-irs990-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "searchQueries": [
+          "foundation"
+        ],
+        "state": "",
+        "nteeCode": "",
+        "maxOrgsPerQuery": 2,
+        "includeFinancialDetails": true,
+        "includeAiBrief": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Prediction Markets & Alternative FinData",
+      "actor_slug": "coherent_edelweiss/polymarket-kalshi-prediction-odds",
+      "column_name": "Polymarket & Kalshi Prediction Market Odds & Volume API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~polymarket-kalshi-prediction-odds/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "platforms": [
+          "polymarket",
+          "kalshi"
+        ],
+        "keywordFilter": "",
+        "maxMarketsPerPlatform": 3,
+        "includeAiSignal": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Creator Economy & B2B Events",
+      "actor_slug": "coherent_edelweiss/luma-events-b2b-leads",
+      "column_name": "Lu.ma Tech, VC & B2B Event Directory & Host Lead Enricher",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~luma-events-b2b-leads/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "keywordFilter": "",
+        "maxEvents": 4,
+        "enrichHostDomains": true,
+        "includeAiPitch": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Jobs, Recruiting & Hiring Intent",
+      "actor_slug": "coherent_edelweiss/startup-ats-hiring-intent",
+      "column_name": "Startup ATS Hiring Intent API (Ashby, Greenhouse & Lever)",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~startup-ats-hiring-intent/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "companyBoards": [
+          "ashby:ramp:ramp.com",
+          "greenhouse:stripe:stripe.com"
+        ],
+        "departmentFilter": "",
+        "maxJobsPerBoard": 2,
+        "includeAiSignal": true,
+        "gdprSafeMode": "auto"
+      },
+      "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)"
+    },
+    {
+      "category": "Healthcare & Medical Licensing",
+      "actor_slug": "coherent_edelweiss/clinicaltrials-sponsor-lead-enricher",
+      "column_name": "ClinicalTrials.gov Sponsor & Biotech Lead Enricher API",
+      "http_method": "POST",
+      "endpoint_url": "https://api.apify.com/v2/acts/coherent_edelweiss~clinicaltrials-sponsor-lead-enricher/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_template": {
+        "conditionOrQuery": "oncology",
+        "overallStatus": "RECRUITING",
+        "sponsorClass": "",
+        "maxStudies": 3,
         "includeAiBrief": true,
         "gdprSafeMode": "auto"
       },

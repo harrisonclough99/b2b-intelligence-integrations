@@ -427,11 +427,138 @@
       ],
       "noticeStage": "tender",
       "minValueGbp": 0,
-      "publishedWithinDays": 7,
+      "publishedWithinDays": 30,
       "maxNotices": 3,
       "includeAiBrief": true,
       "gdprSafeMode": "auto"
     },
     "sample_output": {}
+  },
+  "coherent_edelweiss/us-nonprofit-irs990-enricher": {
+    "category": "Nonprofits, Charities & Grants",
+    "store_url": "https://apify.com/coherent_edelweiss/us-nonprofit-irs990-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "searchQueries": [
+        "foundation"
+      ],
+      "state": "",
+      "nteeCode": "",
+      "maxOrgsPerQuery": 2,
+      "includeFinancialDetails": true,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "ein": "475374786",
+      "formatted_ein": "47-5374786",
+      "organization_name": "Foundation Foundation",
+      "city": "Lytle Creek",
+      "state": "CA",
+      "ntee_code": "P32",
+      "total_revenue_usd": 1450000.0,
+      "total_assets_usd": 3200000.0,
+      "propublica_url": "https://projects.propublica.org/nonprofits/organizations/475374786",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/polymarket-kalshi-prediction-odds": {
+    "category": "Prediction Markets & Alternative FinData",
+    "store_url": "https://apify.com/coherent_edelweiss/polymarket-kalshi-prediction-odds",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "platforms": [
+        "polymarket",
+        "kalshi"
+      ],
+      "keywordFilter": "",
+      "maxMarketsPerPlatform": 3,
+      "includeAiSignal": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "platform": "Polymarket",
+      "market_id": "770450",
+      "question": "Fed Decision in December?",
+      "yes_probability_pct": 82.5,
+      "no_probability_pct": 17.5,
+      "volume_24h_usd": 3517219.5,
+      "liquidity_usd": 2337991.59,
+      "market_url": "https://polymarket.com/event/fed-decision-in-december"
+    }
+  },
+  "coherent_edelweiss/luma-events-b2b-leads": {
+    "category": "Creator Economy & B2B Events",
+    "store_url": "https://apify.com/coherent_edelweiss/luma-events-b2b-leads",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "keywordFilter": "",
+      "maxEvents": 4,
+      "enrichHostDomains": true,
+      "includeAiPitch": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "event_id": "evt-8Ij45xvyavQmOGc",
+      "event_title": "CCI Leeds - NAVIGATE 2026",
+      "event_url": "https://lu.ma/1ydz499s",
+      "city": "Leeds",
+      "country": "United Kingdom",
+      "guest_count": 48,
+      "host_names": [
+        "CCI Leeds"
+      ],
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/startup-ats-hiring-intent": {
+    "category": "Jobs, Recruiting & Hiring Intent",
+    "store_url": "https://apify.com/coherent_edelweiss/startup-ats-hiring-intent",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "companyBoards": [
+        "ashby:ramp:ramp.com",
+        "greenhouse:stripe:stripe.com"
+      ],
+      "departmentFilter": "",
+      "maxJobsPerBoard": 2,
+      "includeAiSignal": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "ats_platform": "Ashby",
+      "company_slug": "ramp",
+      "company_domain": "ramp.com",
+      "job_title": "Software Engineer, Security, Cloud",
+      "department": "Engineering",
+      "location": "New York, NY (HQ)",
+      "mx_verified": true,
+      "mx_provider": "Google Workspace",
+      "gdpr_safe_mode_applied": true
+    }
+  },
+  "coherent_edelweiss/clinicaltrials-sponsor-lead-enricher": {
+    "category": "Healthcare & Medical Licensing",
+    "store_url": "https://apify.com/coherent_edelweiss/clinicaltrials-sponsor-lead-enricher",
+    "pricing": "Pay-Per-Result ($0.002\u2013$0.007 per verified record, $0 on empty lookups)",
+    "sample_input": {
+      "conditionOrQuery": "oncology",
+      "overallStatus": "RECRUITING",
+      "sponsorClass": "",
+      "maxStudies": 3,
+      "includeAiBrief": true,
+      "gdprSafeMode": "auto"
+    },
+    "sample_output": {
+      "nct_id": "NCT06953076",
+      "brief_title": "Ultrasound Transformation of Myomas During Relugolix-Estradiol-Norethisterone Treatment",
+      "overall_status": "RECRUITING",
+      "lead_sponsor_name": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS",
+      "sponsor_class": "OTHER",
+      "enrollment_count": 120,
+      "mx_verified": true,
+      "study_url": "https://clinicaltrials.gov/study/NCT06953076",
+      "gdpr_safe_mode_applied": true
+    }
   }
 }
